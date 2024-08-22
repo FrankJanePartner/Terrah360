@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assests/bootstrap-icons/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assests/remixicon/remixicon.css' %}">
+    <link rel="stylesheet" href="{% static 'assests/boxicons/css/boxicons.css' %}">
+    <link rel="shortcut icon" href="image/terrah2.png" type="image/x-icon">
+    <title>Success</title>
+    <style>
+        body{
+            width: 100dvw;
+            height: 100dvh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .confirmed{
+            width: 100dvw;
+            height: 50dvh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header{
+            width: 97dvw;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            height: 10dvh;
+        }
+
+        .brand{
+            width: 100%;
+        }
+
+        i{
+            text-align: center;
+            font-size: 100px;
+            color: #86c68f;
+            font-size: 15rem;
+            margin: 0;
+            line-height: 0;
+        }
+
+        h1 {
+            font-size: 43px;
+            margin-bottom: 20px;
+            color: #444444;
+            margin: 0;
+        }
+
+        p{
+            color: #444444;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="brand">
+            <img src="{% static 'image/terrah2.png' %}">
+        </a>
+    </header>
+    <div class="confirmed">
+        <i class="bi bi-check"></i>
+        <h1 class="polygot">Subscription Submitted</h1>
+        <p class="polygot">Thank you for joining us! &#x1F389; <br> We promise not to spam you inbox &#x1F91D;</p>
+    </div>
+</body>
+</html>
