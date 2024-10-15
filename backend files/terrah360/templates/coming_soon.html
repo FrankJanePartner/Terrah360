@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/coming.css' %}">
+    <link rel="stylesheet" href="{% static 'assests/bootstrap-icons/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assests/remixicon/remixicon.css' %}">
+    <link rel="stylesheet" href="{% static 'assests/boxicons/css/boxicons.css' %}">
+    <link rel="shortcut icon" href="image/terrah2.png" type="image/x-icon">
+    <title>Coming Soon</title>
+</head>
+<body>
+    <div class="coming-soon">
+        <div class="top">
+            <nav>
+                <a href="test.html">About</a>
+                <a href="">Contact Us</a>
+            </nav>
+            <img src="{% static 'image/logo.png' %}" alt="" class="logo-img">
+            <h5><span>20</span> days Left</h5>
+        </div>
+        <div class="bottom">
+            <h4>Earth is Home!</h4>
+            <h1>COMING SOON</h1>
+            <p>We are crafting Something special</p>
+            <p>Stay tuned for our GRAND REVEAL!</p>
+            <a type="button" class="notify">Notify Me!</a>
+        </div>
+    </div>
+
+    <!-- Popup Window -->
+    <div class="popup" id="popup">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <form method="post">
+            {% csrf_token %}
+            <img src="{% static 'image/notification.gif' %}" alt="Bell Icon">
+            <input type="email" name="email" id="" placeholder="Enter your email" />
+            <button type="submit">Notify me</button>
+        </form>
+    </div>
+
+    <script src="{% static 'js/coming.js' %}"></script>
+</body>
+</html>
